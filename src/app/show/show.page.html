@@ -1,0 +1,13 @@
+<app-navbar [title]="title"></app-navbar>
+
+<ion-content>
+    <ion-list>
+        <ng-container *ngIf="proveedor" >
+            <ion-item>
+                <ion-label color="medium">Nombre proveedor:</ion-label>
+                <ion-label>{{proveedor.data.name}}</ion-label>
+                <ion-badge slot="end" color="success" mode="ios">ACTIVO</ion-badge>
+            </ion-item>
+        </ng-container>
+    </ion-list>
+</ion-content>

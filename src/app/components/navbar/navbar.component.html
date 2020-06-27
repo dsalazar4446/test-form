@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    
+    <ion-buttons slot="start">
+      <ion-button *ngIf="isNavigate === true"  fill="clear" (click)="back()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      {{title}}
+    </ion-title>
+    
+    <ion-buttons slot="end">
+      <ion-button color="success" slot="end" fill="clear">
+        <ion-icon slot="icon-only" name="mail"></ion-icon>
+      </ion-button>
+  
+      <ion-badge slot="end" color="warning" mode="ios">10</ion-badge>
+  
+      <ion-button color="success" slot="end" fill="clear">
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+     
+    </ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
